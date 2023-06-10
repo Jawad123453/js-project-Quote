@@ -1,0 +1,101 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(62, 62, 173);
+  height:100vh;
+  width: 100vw;
+}
+.box{
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 10px black;
+  padding:20px;
+}
+.box h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.box .mainthing{
+  width: 500px;
+  border-bottom: 1px solid black;
+}
+.box .mainthing p{
+  text-align: center;
+  font-size: 22px;
+}
+.box .mainthing .caler{
+  margin-top:10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.box .mainthing .caler p{
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.box .mainthing p::after{
+  content: "";
+  position: absolute;
+  height:1px;
+  width:20px;
+  top:50%;
+  right:calc(100% + 5px) ;
+  transform: translateY(-50%);
+  background-color: black;
+}
+.nextlevel{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0 10px;
+}
+.nextlevel > button{
+  font-size: 18px;
+  padding:20px;
+  border-radius: 30px;
+  background-color: blue;
+  color:white;
+  transition: 0.3s linear;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.nextlevel > button:hover{
+  color:blue ;
+  border:none;
+  background-color:white ;
+  border: 1px solid blue;
+}
+.nextlevel .controlls{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.nextlevel .controlls button{
+  background-color:white ;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  color:blue;
+  font-weight: bold;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.nextlevel .controlls button:focus{
+  border: 1px solid blue;
+}
+.nextlevel .controlls button:hover{
+  color:white;
+  border:none;
+  background-color:blue ;
+}
